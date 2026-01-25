@@ -10,36 +10,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="logo-wrapper"><img src="./images/logo.png" alt="logo class="logo"></div>
-            <div>
-                <h1 class="header__title">PARTNER WITH KONSTUCT</h1>
-                <h3 class="header__subtitle">An award-winning construction management firm</h3>
-            </div>
-            <p class="header__scrolldown-text">SCROLL DOWN</p>
+    <header class="hero">
+        <div class="hero__logo">
+            <img src="./images/logo.png" alt="Konstruct Logo" class="hero__logo-img">
         </div>
-        <div class="navbar">
-            <div class="logo-wrapper_black"><img src="./images/logo_black.png" alt="logo-black" class="logo_black"></div>
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="" class="menu__link">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">About</a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">Services</a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">Work</a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">Contact</a>
-                </li>
-            </ul>
+        <div>
+            <h1 class="hero__title">PARTNER WITH KONSTUCT</h1>
+            <h3 class="hero__subtitle">An award-winning construction management firm</h3>
         </div>
+        <p class="hero__scrolldown">SCROLL DOWN</p>
     </header>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="./images/logo_black.png" alt="Konstruct Logo" class="navbar__logo-img">
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">About</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Services</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Work</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <main class="main">
         <section class="our-story">
             <h2 class="section-title">Our Story</h2>
@@ -164,15 +166,16 @@
                 </div>
             </div>
             <div class="contacts">
-                <p>213 Baker Street
-                    Oriel City Kounty
+                <h5 class="contacts__title">contact us</h5>
+                <p class="contacts__address">213 Baker Street<br>
+                    Oriel City Kounty<br>
                     7000 KNW,<br>
                     Kountry Name
                 </p>
-                <p>
+                <p class="contacts__tel">
                     +23 994 233 4022
                 </p>
-                <p>
+                <p class="contacts__email">
                     info@konstruct.com
                 </p>
             </div>

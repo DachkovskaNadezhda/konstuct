@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -18,51 +18,51 @@ body {
     width: var(--page-width);
     margin: 0 auto;
 }
-.header {
-    --header-width: 100%;
-    --header-height: calc(100vw * 768 / 1440);
+.hero {
+    --hero-width: 100%;
+    --hero-height: calc(100vw * 768 / 1440);
     --padding-top: max(1rem, min(2.85vw, 41px));
     --padding-bottom: max(1rem, min(4.93vw, 71px));
-    --header__title-fsz: max(2rem, min(4.17vw, 60px));
-    --header__subtitle-fsz: 1.231rem;
-    --header_scrolldown-text-fsz: 0.846rem;
+    --hero__title-fsz: max(2rem, min(4.17vw, 60px));
+    --hero__subtitle-fsz: 1.231rem;
+    --hero_scrolldown-fsz: 0.846rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    width: var(--header-width);
-    height: min(var(--header-height), 768px);
+    width: var(--hero-width);
+    height: min(var(--hero-height), 768px);
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
-    background-image: url('./images/header-bg.png');
+    background-image: url('./images/hero-bg.png');
     background-size: contain;
     color: #fff;
 }
-.logo-wrapper {
+.hero__logo {
     --logo-height: 23px;
     width: 101.62px;
     height: var(--logo-height);
-    margin-bottom: min(calc((var(--header-height) 
+    margin-bottom: min(calc((var(--hero-height) 
                          - var(--padding-top) 
                          - var(--padding-bottom)
                          - var(--logo-height)
-                         - var(--header__title-fsz)
-                         - var(--header__subtitle-fsz)
-                         - var(--header_scrolldown-text-fsz)) * (317 / 221 - 1) / (317 /221 + 1) ), 96px);
+                         - var(--hero__title-fsz)
+                         - var(--hero__subtitle-fsz)
+                         - var(--hero_scrolldown-fsz)) * (317 / 221 - 1) / (317 /221 + 1) ), 96px);
 }
-.header__title {
+.hero__title {
     margin-bottom: 2px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-size: var(--header__title-fsz);
+    font-size: var(--hero__title-fsz);
     line-height: 100%;
 }
-.header__subtitle {
-    font-size: var(--header__subtitle-fsz);
+.hero__subtitle {
+    font-size: var(--hero__subtitle-fsz);
 }
-.header__scrolldown-text {
-    font-size: var(--header_scrolldown-text-fsz);
+.hero__scrolldown {
+    font-size: var(--hero_scrolldown-fsz);
     letter-spacing: 1.01px;
 }
 .navbar,
@@ -82,34 +82,34 @@ body {
     justify-content: space-between;
     font-size: 12px;
 }
-.logo-wrapper_black {
+.navbar__logo {
     width: 79.53px;
     height: 18px;
 }
-.menu {
+.navbar__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: clamp(15px, 2.084vw, 30px);
     list-style-type: none;
 }
-.menu__link {
+.navbar__link {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.09px;
     color: inherit;
 }
-.header__subtitle, .header__scrolldown-text, .menu__link {
+.hero__subtitle, .hero__scrolldown, .navbar__link {
     font-weight: 600;
     line-height: 100%;
 }
-.menu__item:nth-child(1) {
+.navbar__item:nth-child(1) {
     margin-right: 1.125em;
 }
-.menu__item:nth-child(2) {
+.navbar__item:nth-child(2) {
     margin-right: 0.781em;
 }
-.menu__item:nth-child(3) {
+.navbar__item:nth-child(3) {
     margin-right: 0.563em;
 }
 .main {
@@ -291,18 +291,38 @@ body {
 }
 .footer__wrapper {
     display: flex;
+    justify-content: flex-start;
     padding-top: 50px;
     padding-bottom: 72px;
+    gap: 46px;
     background-color: #141A20;
 }
-.company__title, .links__title{
+.company__title, .links__title,
+.contacts__title {
     font-size: 11px;
+    font-weight: 400;
     line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+.company {
+    width: 275px;
+    padding-right: 25px;
+}
+.company__title {
+    margin-bottom: 19px;
+}
+.company__logo-wrapper {
+    width: 101.62px;
+    height: 23px;
+    margin-bottom: 15px;
 }
 .links__title {
     margin-bottom: 10px;
 }
 .links {
+    width: 274px;
+    padding-right: 12px;
     text-transform: uppercase;
 }
 .links__wrapper {
@@ -322,8 +342,14 @@ body {
     line-height: 2.273em;
     color: inherit;
 }
-.contacts{
+.contacts {
     width: 141px;
+}
+.contacts__title {
+    margin-bottom: 15px;
+}
+.contacts__address, .contacts__tel {
+    margin-bottom: 16px;
 }
 .socials {
     width: 87px;
@@ -331,5 +357,8 @@ body {
     padding-top: 30px;
 }
 .copyright {
+    padding-top: 22px;
+    padding-bottom: 23px;
+    text-align: center;
     background-color: #171819;
 }
