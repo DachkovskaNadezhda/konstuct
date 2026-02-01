@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="/style/normalize.css"> -->
+    <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
     <header class="hero">
@@ -43,143 +44,141 @@
         </ul>
     </nav>
     <main class="main">
-        <section class="our-story">
-            <h2 class="section-title">Our Story</h2>
-            <div class="section-title-underline"></div>
-            <div class="our-story__wrapper">
-                <div>
+        <section class="story">
+            <h2 class="story__title section-title">Our Story</h2>
+            <div class="section-title__underline"></div>
+            <div class="story__content">
+                <div class="story__text">
                     <p>Founded in 2011 by John Mathew Smith, <span class="firm-name">Konstruct</span> has become
                         the number one construction management firm
                     </p>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
                 </div>
-                <div class="we-do-wrapper">
-                    <div class="we-do">We<br>plan</div>
-                    <div class="we-do">We<br>manage</div>
-                    <div class="we-do">We<br>build</div>
+                <div class="story__cards">
+                    <div class="story__card story__card--plan">We<br>plan</div>
+                    <div class="story__card story__card--manage">We<br>manage</div>
+                    <div class="story__card story__card--build">We<br>build</div>
                 </div>
             </div>
         </section>
         <section class="services">
             <div class="services__hero">
-                <div class="section-title-wrapper">
-                    <h2 class="section-title">Our&nbsp;Capabilities</h2>
-                    <div class="section-title-underline"></div>
+                <div class="services__title-container">
+                    <h2 class="services__title section-title">Our&nbsp;Capabilities</h2>
+                    <div class="section-title__underline"></div>
                 </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                <div class="services__info">
+                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
                     <button class="btn">All Services</button>
                 </div>
             </div>
-            <div class="service-wrapper">
-                <div class="service">
-                    <div class="service__img-wrapper">
-                        <img src="./images/project.png" alt=""></div>
+            <div class="services__container">
+                <div class="services__card">
+                    <div class="service__icon">
+                        <img src="./images/project.png" alt="Project and construction management"></div>
                     <div class="service__content">
-                        <p class="service__title">PROJECT AND CONSTRUCTION MANAGEMENT</p>
-                        <p class="service__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        <p class="service__card-title">PROJECT AND CONSTRUCTION MANAGEMENT</p>
+                        <p class="service__card-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
                     </div>
                 </div>
-                <div class="service">
-                    <div class="service__img-wrapper">
-                        <img src="./images/structure.png" alt=""></div>
+                <div class="services__card">
+                    <div class="service__icon">
+                        <img src="./images/structure.png" alt="Structure audit and maintanance"></div>
                     <div class="service__content">
-                        <p class="service__title">STRUCTURE AUDIT AND MAINTENANCE</p>
-                        <p class="service__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        <p class="service__card-title">STRUCTURE AUDIT AND MAINTENANCE</p>
+                        <p class="service__card-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
                     </div>
                 </div>
-                <div class="service">
-                    <div class="service__img-wrapper">
-                        <img src="./images/factory.png" alt=""></div>
+                <div class="services__card">
+                    <div class="service__icon">
+                        <img src="./images/factory.png" alt="Factory construction and modeling"></div>
                     <div class="service__content">
-                        <p class="service__title">FACTORY CONSTRUCTION AND MODELING</p>
-                        <p class="service__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        <p class="service__card-title">FACTORY CONSTRUCTION AND MODELING</p>
+                        <p class="service__card-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="cta">
-            <h2 class="cta__title">Whant to build something amazing?</h2>
+            <h2 class="cta__title">Want to build something amazing?</h2>
             <button class="btn">Get in touch</button>
         </section>
-        <section class="signup">
-            <div class="signup__wrapper">
+        <section class="signup">  
+            <form  class="signup__form" action="">
                 <label class="signup__label" for="signup-input">
                     Newsletter Signup
                 </label>
-                <input type="email" id="signup-input" name="signup-input" class="signup__input" placeholder="test@youremail.com" autocomplete="email">
-                <button class="btn">signup</button>
-            </div>
+                <div class="signup__container">
+                    <input class="signup__input" type="email" id="signup-input" name="signup-input" placeholder="test@youremail.com" autocomplete="email">
+                    <button class="btn" type="submit">signup</button>
+                </div>
+            </form>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="company">
-                <h5 class="company__title">company</h5>
-                <div class="company__logo-wrapper">
+        <div class="footer__container">
+            <div class="footer__company">
+                <h5 class="footer__section-title">company</h5>
+                <div class="footer__logo">
                     <img src="./images/logo.png" alt="logo">
                 </div>
-                <div class="company__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
+                <div class="footer__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
             </div>
-            <div class="links">
-                <h5 class="links__title">links</h5>
-                <div class="links__wrapper">
-                    <ul>
+            <div class="footer__links">
+                <h5 class="footer__section-title">links</h5>
+                <div class="footer__links-container">
+                    <ul class="footer__links-list">
                         <li>
-                            <a href="" class="links__item">home</a>
+                            <a href="" class="footer__link">home</a>
                         </li>
                         <li>
-                            <a href="" class="links__item">About</a>
+                            <a href="" class="footer__link">About</a>
                         </li>
                         <li>
-                            <a href="" class="links__item">Services</a>
+                            <a href="" class="footer__link">Services</a>
                         </li>
                         <li>
-                            <a href="" class="links__item">Projects</a>
+                            <a href="" class="footer__link">Projects</a>
                         </li>
                         <li>
-                            <a href="" class="links__item">Contuct&nbsp;us</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="" class="links__item">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="" class="links__item">terms</a>
-                        </li>
-                        <li>
-                            <a href="" class="links__item">Careers</a>
+                            <a href="" class="footer__link">Contuct&nbsp;us</a>
                         </li>
                     </ul>
-                    <ul>
+                    <ul class="footer__links-list">
                         <li>
-                            <a href="" class="links__item">blog</a>
+                            <a href="" class="footer__link">FAQ</a>
                         </li>
                         <li>
-                            <a href="" class="links__item">partners</a>
+                            <a href="" class="footer__link">terms</a>
                         </li>
                         <li>
-                            <a href="" class="links__item">news</a>
+                            <a href="" class="footer__link">Careers</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__links-list">
+                        <li>
+                            <a href="" class="footer__link">blog</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">partners</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">news</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="contacts">
-                <h5 class="contacts__title">contact us</h5>
-                <p class="contacts__address">213 Baker Street<br>
+            <div class="footer__contact">
+                <h5 class="footer__section-title">contact us</h5>
+                <p class="footer__contact-info">213 Baker Street<br>
                     Oriel City Kounty<br>
                     7000 KNW,<br>
-                    Kountry Name
-                </p>
-                <p class="contacts__tel">
-                    +23 994 233 4022
-                </p>
-                <p class="contacts__email">
+                    Kountry Name<br><br>
+                    +23 994 233 4022<br><br>
                     info@konstruct.com
                 </p>
             </div>
-            <div class="socials">
+            <div class="footer__socials">
                 <img src="./socials.png" alt="socials" width="87px" height="13px" usemap="#socials">
                 <map name="socials">
                     <area shape="rect" coords="0,0,13,13" href="facebook.com" alt="facebook" class="facebook" target="_blank">
@@ -188,7 +187,7 @@
                 </map>
             </div>
         </div>
-        <div class="copyright">&copy; Konstruct Inc. Designed by Jane Kathryn Teo</div>
+        <div class="footer__copyright">&copy; Konstruct Inc. Designed by Jane Kathryn Teo</div>
     </footer>
 </body>
 </html>
